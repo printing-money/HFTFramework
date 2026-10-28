@@ -732,9 +732,9 @@ public abstract class Algorithm extends AlgorithmParameters implements MarketDat
         //https://www.formdev.com/flatlaf/themes/
         FlatLaf flatLaf = null;
         if (isBacktest) {
-            flatLaf = new FlatDarculaLaf();
-        } else {
             flatLaf = new FlatIntelliJLaf();
+        } else {
+            flatLaf = new FlatDarculaLaf();
         }
 
         try {
